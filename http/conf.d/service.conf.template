@@ -1,8 +1,12 @@
+upstream services {
+    %{UPSTREAM_SERVICES}%
+}
+
 server {
     listen          80;
 
     location / {
         include proxy_params;
-        proxy_pass %{HTTP_URL}%;
+        proxy_pass http://services/;
     }
 }

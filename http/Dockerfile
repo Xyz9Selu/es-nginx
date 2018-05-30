@@ -3,7 +3,7 @@ FROM registry.docker-cn.com/library/nginx:latest
 # uwsgi url, 
 # tcp port: ip:port
 # sock file: unix://your/sock/file.sock
-ENV HTTP_URL=your.service.hostname:port
+ENV UPSTREAM_SERVICES='server your.server1;server your.server2;'
 
 # set timezone
 ENV TZ=Asia/Shanghai
