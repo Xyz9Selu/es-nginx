@@ -1,10 +1,9 @@
 FROM registry.docker-cn.com/library/nginx:latest
 
-# http upstream services
-# server your.server1;
-# server your.server2;
-# ...
-ENV UPSTREAM_SERVICES='server your.server1;server your.server2;'
+# upstream services
+# server your.site.host:port;
+# server unix:///path/to/your/site/site.sock;
+ENV UPSTREAM_UWSGI_SERVICES='server your.site.host:port;server unix:///path/to/your/site/site.sock;'
 
 # set timezone
 ENV TZ=Asia/Shanghai
