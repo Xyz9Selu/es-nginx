@@ -1,11 +1,11 @@
 version: '2'
 services:
   nginx:
-    image: registry.cn-hangzhou.aliyuncs.com/endlessstudio/es-nginx:http
+    image: es-nginx:d-proxy
     restart: always
     ports:
       - 8083:80/tcp
     environment:
       - TZ=Asia/Shanghai
-      - UPSTREAM_SERVICES=server www.baidu.com;
+      - TARGET_HOST=www.baidu.com
     mem_limit: 209715200
