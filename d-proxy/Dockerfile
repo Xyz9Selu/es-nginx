@@ -5,6 +5,7 @@ FROM registry.docker-cn.com/library/nginx:latest
 # server your.server2;
 # ...
 ENV TARGET_HOST='your.host.com'
+ENV TARGET_URL='http(s)://your.host.com/your/path'
 
 # set timezone
 ENV TZ=Asia/Shanghai

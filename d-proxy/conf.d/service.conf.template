@@ -3,7 +3,7 @@ server {
 
     location / {
         include proxy_params;
-        proxy_pass http://%{TARGET_HOST}%;
+        proxy_pass %{TARGET_URL}%;
         proxy_set_header Host "%{TARGET_HOST}%";
     }
 }
