@@ -1,11 +1,11 @@
 version: '2'
 services:
   nginx:
-    image: registry.cn-hangzhou.aliyuncs.com/endlessstudio/es-nginx:d-proxy
+    image: registry.cn-hangzhou.aliyuncs.com/endlessstudio/es-nginx:uwsgi
     restart: always
     ports:
       - 8083:80/tcp
     environment:
       - TZ=Asia/Shanghai
-      - TARGET_HOST=www.baidu.com
+      - UWSGI_URL=server:4080;
     mem_limit: 209715200
