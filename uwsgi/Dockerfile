@@ -1,4 +1,4 @@
-FROM registry.docker-cn.com/library/nginx:latest
+FROM nginx
 
 # uwsgi url, 
 # tcp port: ip:port

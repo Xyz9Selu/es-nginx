@@ -8,4 +8,4 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - UWSGI_URL=server:4080;
-    mem_limit: 209715200
+    mem_limit: 200m

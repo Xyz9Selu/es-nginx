@@ -10,4 +10,4 @@ services:
       - TZ=Asia/Shanghai
       - TARGET_HOST=appserver-v2.axinfu.com
       - TARGET_URL=http://appserver-v2.axinfu.com
-    mem_limit: 209715200
+    mem_limit: 200m

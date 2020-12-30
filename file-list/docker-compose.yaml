@@ -1,0 +1,13 @@
+version: '2'
+services:
+  nginx:
+    image: es-nginx:file-list
+    # image: registry.cn-hangzhou.aliyuncs.com/endlessstudio/es-nginx:file-list
+    restart: always
+    ports:
+      - 8083:80/tcp
+    environment:
+      - TZ=Asia/Shanghai
+      - ROOT_PATH=/var/www/html
+      - URL_PATH=/
+    mem_limit: 200m

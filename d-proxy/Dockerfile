@@ -1,4 +1,4 @@
-FROM registry.docker-cn.com/library/nginx:latest
+FROM nginx
 
 # http upstream services
 # server your.server1;

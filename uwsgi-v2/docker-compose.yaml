@@ -8,4 +8,4 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - UPSTREAM_UWSGI_SERVICES=server server01:4080;server server02:4080;
-    mem_limit: 209715200
+    mem_limit: 200m

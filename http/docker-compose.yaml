@@ -8,4 +8,4 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - UPSTREAM_SERVICES=server www.baidu.com;
-    mem_limit: 209715200
+    mem_limit: 200m
