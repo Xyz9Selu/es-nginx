@@ -3,7 +3,6 @@ server {
         root    %{ROOT_PATH}%;
         location %{URL_PATH}% {
                 alias    %{ROOT_PATH}%;
-                index   index.html;
                 autoindex on;
         }
 }
