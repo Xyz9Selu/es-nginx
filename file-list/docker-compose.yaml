@@ -9,5 +9,5 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - ROOT_PATH=/var/www/html
-      - URL_PATH=/
+      - URL_PATH=/my-html
     mem_limit: 200m
